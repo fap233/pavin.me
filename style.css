@@ -80,7 +80,10 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    /* Animação para o gradiente e um pulso suave */
+    
+    white-space: nowrap;
+    
+
     animation: gradient-animation 4s linear infinite, pulse 2s infinite alternate;
 }
 
