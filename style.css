@@ -1,0 +1,144 @@
+/* Definições de cores e fontes */
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --gradient-start: #ff007f;
+    --gradient-end: #007bff;
+    --border-color: #f0f0f0;
+    --font-family-handwritten: "Permanent Marker", cursive;
+    --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Importa a fonte para a escrita à mão */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family-sans);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-logo {
+    font-size: 1.25rem;
+    font-family: var(--font-family-handwritten);
+    
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo-link, .portfolio-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-family-handwritten);
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+.portfolio-link:hover, .logo-link:hover {
+    color: var(--gradient-start);
+}
+
+.portfolio-link.active {
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.main-logo-text {
+    font-family: var(--font-family-handwritten);
+    font-size: clamp(3rem, 15vw, 8rem);
+    margin: 0;
+    
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Animação para o gradiente e um pulso suave */
+    animation: gradient-animation 4s linear infinite, pulse 2s infinite alternate;
+}
+
+.status-text {
+    font-family: var(--font-family-handwritten);
+    font-size: clamp(1rem, 5vw, 2rem);
+    margin-top: 1rem;
+    color: #b0b0b0;
+}
+
+.soon-text {
+    font-family: var(--font-family-handwritten);
+    font-size: clamp(4rem, 20vw, 10rem);
+    color: #b0b0b0;
+    animation: pulse 2s infinite alternate;
+}
+
+.social-links-squares {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.social-square {
+    width: clamp(2rem, 8vw, 3rem);
+    height: clamp(2rem, 8vw, 3rem);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
+    color: var(--border-color);
+    text-decoration: none;
+    transition: border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.social-square:hover {
+    border-color: var(--gradient-start);
+    color: var(--gradient-start);
+    transform: translateY(-5px);
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    color: #666;
+    font-size: 0.8rem;
+}
+
+/* Animações */
+@keyframes gradient-animation {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
