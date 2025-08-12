@@ -1,0 +1,39 @@
+body {
+	background-color: rgb(70, 142, 236);
+	font: normal 15pt Arial;
+}
+
+header {
+	color: white;
+	text-align: center;
+}
+
+section {
+	background: white;
+	border-radius: 10px;
+	padding: 20px;
+	width: 500px;
+	margin: auto;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+div {
+	text-align: center;
+}
+.image-container {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	allign-items: center;
+	overflow: hidden;
+}
+.image-container img {
+	max-width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	object-fit: contain;
+}
+footer {
+	color: white;
+	text-align: center;
+	font-style: italic;
+}
