@@ -1,25 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pavin.me - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <a href="index.html" class="logo-link"><span class="header-logo">pavin.me</span></a>
-        <a href="portfolio.html" class="portfolio-link active">portfolio</a>
+      <a href="index.html" class="logo-link"
+        ><span class="header-logo">pavin.me</span></a
+      >
+      <a href="portfolio.html" class="portfolio-link active">portfolio</a>
     </header>
 
-    <main class="main-content">
-        <h1 class="soon-text">soon</h1>
+    <main class="projects-content">
+      <h1>Projects</h1>
+      <div class="projects-container">
+        <a href="hour-of-the-day/index.html" class="project-card">
+          <div class="project-image">
+            <img
+              src="hour-of-the-day/images/fotomanha.png"
+              alt="Imagem do projeto Hour of the Day"
+            />
+          </div>
+          <div class="project-description">
+            <h2>Hour of the Day</h2>
+            <p>
+              A simple JavaScript project that changes the image and message
+              based on the time of the day.
+            </p>
+          </div>
+        </a>
+      </div>
     </main>
 
-    <footer class="footer">
-        pavin.me 2025
-    </footer>
+    <footer class="footer">pavin.me 2025</footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
