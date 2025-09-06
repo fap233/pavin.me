@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Fellipe Pavin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8fafc; /* slate-50 */
+        font-size: 14px; /* Reduced base font size */
+      }
+      .container {
+        max-width: 8.5in;
+        min-height: 10in; /* Adjusted min-height */
+        margin: 1rem auto; /* Reduced margin */
+        background: white;
+        box-shadow:
+          0 4px 6px -1px rgb(0 0 0 / 0.1),
+          0 2px 4px -2px rgb(0 0 0 / 0.1);
+      }
+      h1,
+      h2,
+      h3 {
+        font-weight: 700;
+      }
+      h2 {
+        padding-top: 40px;
+        border-bottom: 1.5px solid #e2e8f0; /* slate-200 */
+        padding-bottom: 6px;
+        margin-top: 20px;
+        margin-bottom: 12px;
+        color: #1e293b; /* slate-800 */
+      }
+      .icon {
+        width: 14px; /* Reduced icon size */
+        height: 14px;
+        stroke-width: 2px;
+        margin-right: 6px;
+      }
+      @media print {
+        body {
+          background-color: white;
+          font-size: 11pt;
+        }
+        .container {
+          box-shadow: none;
+          margin: 0;
+          padding: 0.5in 0.75in;
+          max-width: 100%;
+          border: none;
+        }
+        .print-button {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-2 md:p-4">
+    <div class="container p-8 md:p-10">
+      <header class="text-center mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-slate-800">
+          Fellipe Pavin
+        </h1>
+        <div
+          class="flex justify-center items-center gap-x-4 gap-y-1 mt-3 text-slate-600 flex-wrap text-sm"
+        >
+          <div class="flex items-center">
+            <i data-lucide="phone" class="icon"></i>
+            <span>+55 (85) 99268-8102</span>
+          </div>
+          <div class="flex items-center">
+            <i data-lucide="globe" class="icon"></i>
+            <a
+              href="https://pavin.me"
+              target="_blank"
+              class="hover:text-blue-600"
+              >pavin.me</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <h2 class="text-lg md:text-xl">Summary</h2>
+        <p class="text-slate-700 leading-normal">
+          Software Engineer with a passion for product and proven business
+          acumen. Seeking to collaborate with dynamic teams to develop
+          high-performance web applications using JavaScript/TypeScript, React,
+          and Node.js, applying my experience in scaling a digital business from
+          scratch.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg md:text-xl">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
+          <div>
+            <h3 class="font-bold text-base text-slate-700 mb-2">
+              Backend (Node.js)
+            </h3>
+            <ul class="list-disc list-inside text-slate-600 space-y-1 text-sm">
+              <li><strong>Framework:</strong> Express.js for RESTful APIs</li>
+              <li><strong>ORM:</strong> Prisma with PostgreSQL</li>
+              <li>
+                <strong>Security:</strong> JWT with HttpOnly cookies & CSRF
+                protection
+              </li>
+              <li><strong>Database:</strong> PostgreSQL</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-base text-slate-700 mb-2">
+              Frontend (React | TypeScript)
+            </h3>
+            <ul class="list-disc list-inside text-slate-600 space-y-1 text-sm">
+              <li>
+                <strong>Libraries & Frameworks:</strong> React (Hooks, Router),
+                jQuery
+              </li>
+              <li>
+                <strong>Languages:</strong> JavaScript (ES6+), HTML5, CSS3
+              </li>
+              <li><strong>Build Tools:</strong> Vite</li>
+              <li><strong>UI:</strong> Tailwind CSS, Shadcn/ui</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-base text-slate-700 mb-2">
+              Tools & Methodologies
+            </h3>
+            <ul class="list-disc list-inside text-slate-600 space-y-1 text-sm">
+              <li><strong>Version Control:</strong> Git, GitHub</li>
+              <li><strong>Management:</strong> Scrum, Kanban, Trello</li>
+              <li><strong>Operating Systems:</strong> Linux, Windows</li>
+              <li><strong>DevOps:</strong> Docker, Networking (Mikrotik)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-lg md:text-xl">Professional Experience</h2>
+        <div class="mb-4">
+          <h3 class="text-base font-bold text-slate-800">
+            Developer & Creator | HydraSMM Project
+          </h3>
+          <p class="text-xs text-slate-500 mb-2 italic">July 2025 – Present</p>
+          <ul
+            class="list-disc list-inside text-slate-700 space-y-1 leading-normal text-sm"
+          >
+            <li>
+              Developing an SMM E-commerce platform, managing the full project
+              lifecycle from architecture to implementation.
+            </li>
+            <li>
+              Building the user interface (frontend) with
+              <strong>React</strong> and <strong>TypeScript</strong>, focusing
+              on a modern and responsive user experience.
+            </li>
+            <li>
+              Developing the backend RESTful API with
+              <strong>Node.js, Express, and TypeScript</strong>, using
+              <strong>Prisma ORM</strong> for data manipulation with PostgreSQL,
+              and implementing secure authentication with JWT and CSRF
+              protection.
+            </li>
+            <li>
+              Using <strong>Git</strong> and <strong>GitHub</strong> for code
+              versioning and project task management, following clean and
+              modular code principles.
+            </li>
+          </ul>
+        </div>
+        <div class="mb-4">
+          <h3 class="text-base font-bold text-slate-800">
+            Professional Development & Independent Study
+          </h3>
+          <p class="text-xs text-slate-500 mb-2 italic">
+            January 2024 – Present
+          </p>
+          <ul
+            class="list-disc list-inside text-slate-700 space-y-1 leading-normal text-sm"
+          >
+            <li>
+              Period dedicated to deepening and updating knowledge in software
+              development technologies, with a focus on the
+              JavaScript/TypeScript ecosystem.
+            </li>
+            <li>
+              Intensive study of modern frameworks like React and Node.js, and
+              development practices such as microservices architecture and
+              CI/CD.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-base font-bold text-slate-800">
+            Founder & Digital Business Manager | Crescigram
+          </h3>
+          <p class="text-xs text-slate-500 mb-2 italic">
+            January 2018 – December 2023 (6 years)
+          </p>
+          <ul
+            class="list-disc list-inside text-slate-700 space-y-1.5 leading-normal text-sm"
+          >
+            <li>
+              Conceived and scaled the business from scratch, generating over
+              <strong>BRL 5 million</strong> in revenue by selling more than
+              <strong>100,000 services</strong> to a base of
+              <strong>10,000+ clients</strong>.
+            </li>
+            <li>
+              Managed a performance marketing budget of over
+              <strong>BRL 1 million</strong> across channels like
+              <strong>Google Ads, TikTok Ads, and Taboola</strong>, and
+              structured <strong>email marketing</strong> campaigns for
+              retention, achieving a 4x ROAS and maintaining a
+              <strong>30-40%</strong> profit margin.
+            </li>
+            <li>
+              Developed and executed SEO strategies that ranked high-competition
+              keywords in the
+              <strong>top position on Google's SERP</strong>, driving
+              continuous, qualified organic traffic.
+            </li>
+            <li>
+              Led the development and management of the
+              <strong>Laravel</strong> e-commerce platform, implementing the
+              product roadmap, new features, and ensuring stability to support a
+              high volume of transactions.
+            </li>
+            <li>
+              Structured and led the customer service team, hiring and training
+              2 employees to scale operations and ensure high satisfaction for a
+              growing client base.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-lg md:text-xl">Education</h2>
+        <div>
+          <h3 class="text-base font-bold text-slate-800">
+            Analysis and Systems Development (Associate's Degree)
+          </h3>
+          <p class="text-slate-600 text-sm">Descomplica Digital College</p>
+          <p class="text-xs text-slate-500 italic">
+            Expected Graduation: October 2026
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-lg md:text-xl">Certifications</h2>
+        <div>
+          <h3 class="text-base font-bold text-slate-800">
+            Google Ads Search Certification
+          </h3>
+          <p class="text-xs text-slate-500 italic">Valid 2024 - 2025</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-lg md:text-xl">English Proficiency</h2>
+
+        <div>
+          <h3 class="text-base font-bold text-slate-800">
+            B2 Level - Upper-Intermediate
+          </h3>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
