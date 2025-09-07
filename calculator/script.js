@@ -44,11 +44,11 @@ const calculate = () => {
 			displayActualize(previousNumber / actualNumber);
 		}
   */
-		displayActualize(result);
+		displayUpdate(result);
 	}
 };
 
-const displayActualize = (text) => {
+const displayUpdate = (text) => {
 	if (newNumber) {
 		display.textContent = text;
 		newNumber = false;
@@ -57,7 +57,7 @@ const displayActualize = (text) => {
 	}
 };
 
-const insertNumber = (event) => displayActualize(event.target.textContent);
+const insertNumber = (event) => displayUpdate(event.target.textContent);
 
 numbers.forEach((number) => number.addEventListener("click", insertNumber));
 
