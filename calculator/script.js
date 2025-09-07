@@ -32,16 +32,16 @@ const calculate = () => {
 		}
 
 		/*	const result = eval(`${previousNumber}${operator}${actualNumber}`);
-		displayActualize(result);
+		displayUpdate(result);
 
 		/*	if (operator == "+") {
-			displayActualize(previousNumber + actualNumber);
+			displayUpdate(previousNumber + actualNumber);
 		} else if (operator == "*") {
-			displayActualize(previousNumber * actualNumber);
+			displayUpdate(previousNumber * actualNumber);
 		} else if (operator == "-") {
-			displayActualize(previousNumber - actualNumber);
+			displayUpdate(previousNumber - actualNumber);
 		} else if (operator == "/") {
-			displayActualize(previousNumber / actualNumber);
+			displayUpdate(previousNumber / actualNumber);
 		}
   */
 		displayUpdate(result);
