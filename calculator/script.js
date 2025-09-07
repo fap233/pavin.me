@@ -81,21 +81,21 @@ const activateEquals = () => {
 };
 document.getElementById("equals").addEventListener("click", activateEquals);
 
-// clear display (C)
+// clear display (CE)
 
-const clearDisplay = () => {
+const clearEntry = () => {
 	display.textContent = "";
 };
 
-document.getElementById("clearDisplay").addEventListener("click", clearDisplay);
+document.getElementById("clearEntry").addEventListener("click", clearEntry);
 
-// clear all (CE)
+// clear all (C)
 
-const clearCalc = () => {
-	clearDisplay();
+const clear = () => {
+	clearEntry();
 	newNumber = true;
 	operator = undefined;
 	previousNumber = undefined;
 };
 
-document.getElementById("clearCalc").addEventListener("click", clearCalc);
+document.getElementById("clear").addEventListener("click", clear);
