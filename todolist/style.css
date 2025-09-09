@@ -78,6 +78,7 @@ body {
 	width: 30px;
 	height: 30px;
 	font: inherit;
+	cursor: pointer;
 }
 
 .todo__item > input[type="checkbox"]:checked + div {
