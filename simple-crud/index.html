@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/button.css" rel="stylesheet" />
+    <link href="css/records.css" rel="stylesheet" />
+    <link href="css/modal.css" rel="stylesheet" />
+    <script src='script.js' defer></script>
+
+    <title>CRUD</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Customer Registration</h1>
+    </header>
+
+    <main>
+      <button type="button" class="button blue mobile" id="customerRegister">
+        Customer Register
+      </button>
+      <table id="tableClient" class="records">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Cellphone</th>
+            <th>City</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2>New Customer</h2>
+            <span class="modal-close" id='modalClose'>&#10006</span>
+
+          </header>
+          <form id='form' class='modal-form'>
+            <input type='text' id='name' data-index='new' class='modal-field' placeholder='Customer Name' required />
+            <input type='email' id='email' class='modal-field' placeholder='Customer E-mail' required />
+            <input type='text' id='phone' class='modal-field' placeholder='Customer Phone' required />
+            <input type='text' id='city' class='modal-field' placeholder='Customer City' required />
+          </form>
+          <footer class='modal-footer'>
+            <button id='save' class='button green'>Save</button>
+            <button id='cancel' class='button blue'>Cancel</button>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <footer>
+      pavin.me 2025
+    </footer>
+  </body>
+</html>
