@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Currency Converter</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="converter-container">
+      <h2>Currency Converter</h2>
+      <p class="subtitle">
+        The most accurate source of data. Powered by
+        <span class="provider">PLACEHOLDER</span>
+      </p>
+
+      <div class="currency-row">
+        <div class="currency-column column">
+          <label for="sourceCurrency">From:</label>
+          <select id="sourceCurrency">
+            <option value="USD">USD - US Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - British Pound</option>
+            <option value="JPY">JPY - Japanese Yen</option>
+            <option value="AUD">AUD - Australian Dollar</option>
+            <option value="CAD">CAD - Canadian Dollar</option>
+            <option value="CHF">CHF - Swiss Franc</option>
+            <option value="CNY">CNY - Chinese Yuan</option>
+            <option value="INR">INR - Indian Rupee</option>
+            <option value="BRL">BRL - Brazilian Real</option>
+          </select>
+        </div>
+
+        <div class="currency-column column">
+          <label for="targetCurrency">To:</label>
+          <select id="targetCurrency">
+            <option value="EUR">EUR - Euro</option>
+            <option value="USD">USD - US Dollar</option>
+            <option value="GBP">GBP - British Pound</option>
+            <option value="JPY">JPY - Japanese Yen</option>
+            <option value="AUD">AUD - Australian Dollar</option>
+            <option value="CAD">CAD - Canadian Dollar</option>
+            <option value="CHF">CHF - Swiss Franc</option>
+            <option value="CNY">CNY - Chinese Yuan</option>
+            <option value="INR">INR - Indian Rupee</option>
+            <option value="BRL">BRL - Brazilian Real</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="amount-row">
+        <div class="amount-column column">
+          <label for="amount">Amount:</label>
+          <input type="number" name="amount" value="Enter amount" id="amount" />
+        </div>
+        <div class="converted-column column">
+          <label for="convertedAmount">Converted Amount:</label>
+          <input
+            type="text"
+            name="convertedAmount"
+            placeholder="Converted Amount"
+            readonly
+          />
+        </div>
+      </div>
+      <button class="convert-button">Convert</button>
+    </div>
+  </body>
+</html>
