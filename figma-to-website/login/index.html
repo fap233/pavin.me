@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <script
+      src="https://kit.fontawesome.com/3db04113f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/colors.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/login-container.css" />
+    <link rel="stylesheet" href="./css/form-container.css" />
+    <link rel="stylesheet" href="./css/form-title.css" />
+    <link rel="stylesheet" href="./css/form-social.css" />
+    <link rel="stylesheet" href="./css/social-icon.css" />
+    <link rel="stylesheet" href="./css/form-input-container.css" />
+    <link rel="stylesheet" href="./css/form-input.css" />
+    <link rel="stylesheet" href="./css/form-button.css" />
+    <link rel="stylesheet" href="./css/overlay-container.css" />
+    <link rel="stylesheet" href="./css/overlay.css" />
+    <link rel="stylesheet" href="./css/mobile-text.css" />
+
+    <script src="./js/login.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="login-container" id="login-container">
+        <div class="form-container">
+          <form class="form form-login">
+            <h2 class="form-title">Login with</h2>
+            <div class="form-social">
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-facebook-f"></i> </a
+              ><a href="#" class="social-icon">
+                <i class="fa-brands fa-google"></i> </a
+              ><a href="#" class="social-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+            <p class="form-text">or use your account</p>
+            <div class="form-input-container">
+              <input
+                type="email"
+                name="email"
+                class="form-input"
+                placeholder="E-mail"
+              />
+
+              <input
+                type="password"
+                name="password"
+                class="form-input"
+                placeholder="Password"
+              />
+            </div>
+            <a href="#" class="form-link">Forgot password?</a>
+            <button type="button" class="form-button">LOGIN</button>
+            <p class="mobile-text">
+              Not registered?
+              <a href="#" id="open-register-mobile">Sign Up</a>
+            </p>
+          </form>
+          <form class="form form-register">
+            <h2 class="form-title">Create Account</h2>
+            <div class="form-social">
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-facebook-f"></i> </a
+              ><a href="#" class="social-icon">
+                <i class="fa-brands fa-google"></i> </a
+              ><a href="#" class="social-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+            <p class="form-text">or sign up here</p>
+            <div class="form-input-container">
+              <input
+                type="text"
+                name="name"
+                class="form-input"
+                placeholder="Name"
+              />
+
+              <input
+                type="email"
+                name="email"
+                class="form-input"
+                placeholder="E-mail"
+              />
+              <input
+                type="password"
+                name="password"
+                class="form-input"
+                placeholder="Password"
+              />
+            </div>
+            <button type="button" class="form-button">SIGN UP</button>
+            <p class="mobile-text">
+              Already registered?
+              <a href="#" id="open-login-mobile">Sign In</a>
+            </p>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <h2 class="form-title form-title-light">Already registered?</h2>
+            <p class="form-text">Sign in and start using our online platform</p>
+            <button class="form-button form-button-light" id="open-login">
+              SIGN IN
+            </button>
+          </div>
+          <div class="overlay">
+            <h2 class="form-title form-title-light">Hello, student!</h2>
+            <p class="form-text">Sign up and start using our online platform</p>
+            <button class="form-button form-button-light" id="open-register">
+              SIGN UP
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
