@@ -1,0 +1,42 @@
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	font-family: "Kaushan Script", cursive;
+	color: white;
+	text-align: center;
+	gap: 120px;
+}
+
+.text-container p:first-child {
+	font-size: 128px;
+	font-weight: 400;
+}
+
+.text-container p:last-child {
+	font-size: 76px;
+	font-weight: 400;
+	line-height: 75%;
+}
+
+.text-container h2 {
+	font-weight: 400;
+	color: var(--primary-color);
+	text-align: right;
+}
+
+.action {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--secondary-color);
+	height: 64px;
+	width: 200px;
+	font-size: 24px;
+	font-family: "Inter", sans-serif;
+	color: var(--primary-color);
+	box-shadow: 0 0 12px 4px var(--primary-color);
+	border-radius: 8px;
+}

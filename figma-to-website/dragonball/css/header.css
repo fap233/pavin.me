@@ -1,0 +1,25 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	gap: 48px;
+}
+
+nav ul a {
+	color: var(--primary-color);
+	font-size: 24px;
+	font-family: "Inter", sans-serif;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: 0.5s;
+}
+
+nav ul a:hover {
+	background-color: var(--primary-color);
+	color: #000;
+	box-shadow: 0 0 12px 4px var(--primary-color);
+}
