@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--color-primary: #2e1012;
+	--color-secondary: #f3cc4d;
+	--color-text-primary: #2e1012;
+	--color-text-secondary: #fff;
+	--font-family: "Indie Flower", cursive;
+}
+
+body {
+	background-image: url(./img/background.png);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;
+	background-color: var(--color-primary);
+}
+
+main {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container-left {
+	background-image: url(./img/bombom.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container-center {
+	background-color: var(--color-secondary);
+	display: grid;
+	place-items: center;
+	font-family: var(--font-family);
+	padding-inline: 32px;
+}
+
+.text {
+	font-size: 2rem;
+	text-align: center;
+	color: var(--color-text-primary);
+}
+
+.action a {
+	height: 72px;
+	width: 288px;
+	display: grid;
+	place-items: center;
+	background-color: var(--color-primary);
+	font-size: 2rem;
+	color: var(--color-text-secondary);
+	text-decoration: none;
+}
+
+.container-right {
+	background-image: url(./img/bombom-aberto.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@media (max-width: 768px) {
+	main {
+		grid-template-columns: 1fr;
+	}
+
+	.container-left,
+	.container-right {
+		display: none;
+	}
+
+	.container-center {
+		background-image: url(./img/bombom.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-blend-mode: soft-light;
+	}
+
+	.text {
+		font-size: 1.5rem;
+	}
+
+	.action a {
+		width: 80vw;
+	}
+}
