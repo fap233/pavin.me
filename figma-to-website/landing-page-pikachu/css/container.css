@@ -1,0 +1,14 @@
+.container {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	width: 90vw;
+	margin: auto;
+	font-family: "Righteous", cursive;
+}
+
+@media (max-width: 960px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+}

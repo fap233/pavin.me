@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #f5cf06;
+	--secondary-color: #8e4106;
+}
+
+body {
+	height: 100vh;
+	background-color: var(--primary-color);
+	display: flex;
+	flex-direction: column;
+}

@@ -1,0 +1,13 @@
+.footer__text {
+	margin-bottom: 24px;
+	grid-column: 1 / -1;
+	place-self: center;
+	color: var(--secondary-color);
+	font-size: 1rem;
+}
+
+@media (max-width: 960px) {
+	footer {
+		display: none;
+	}
+}
