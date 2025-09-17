@@ -1,0 +1,36 @@
+:root {
+	--primary-color: #fcd116;
+	--secondary-color: #108e34;
+	--secondary-color-transparent: #108e3499;
+	--tertiary-color: #0c4076;
+}
+
+body {
+	height: 100vh;
+	background-image: url(../img/estadio-lusail.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 35% bottom;
+	font-family: "Iceland", cursive;
+	display: grid;
+	grid-template-rows: 140px 1fr 200px;
+}
+
+.overlay {
+	position: absolute;
+	background-image: url(../img/background-cores.png);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
+@media (max-width: 1024px) {
+	body {
+		background-repeat: repeat;
+		grid-template-rows: 140px calc(100vh - 140px) 1fr;
+	}
+}
