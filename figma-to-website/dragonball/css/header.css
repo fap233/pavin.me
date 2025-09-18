@@ -1,8 +1,12 @@
-nav {
+header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 }
+
+/* nav { */
+/* 	display: flex; */
+/* 	/* justify-content: space-between; */
+/* } */
 
 nav ul {
 	display: flex;
@@ -13,7 +17,6 @@ nav ul a {
 	color: var(--primary-color);
 	font-size: 24px;
 	font-family: "Inter", sans-serif;
-	padding: 12px 24px;
 	border-radius: 4px;
 	transition: 0.5s;
 }
@@ -22,4 +25,29 @@ nav ul a:hover {
 	background-color: var(--primary-color);
 	color: #000;
 	box-shadow: 0 0 12px 4px var(--primary-color);
+}
+
+@media (max-width: 960px) {
+	nav ul {
+		position: absolute;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-color: var(--secondary-color);
+		transform: translateX(100%);
+		z-index: 1;
+		font-size: 2.5 rem;
+		opacity: 0;
+		transition: all 1s ease;
+		gap: 65px;
+	}
+
+	.menu-burger-container.active ~ nav ul {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
