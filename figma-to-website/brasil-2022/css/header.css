@@ -9,6 +9,7 @@ header {
 	display: flex;
 	align-items: center;
 	gap: 8px;
+	cursor: pointer;
 }
 
 .logo__text {
@@ -16,6 +17,7 @@ header {
 	font-size: 3rem;
 	color: #fff;
 	text-shadow: 2px 2px 2px #000;
+	cursor: pointer;
 }
 
 .menu {
